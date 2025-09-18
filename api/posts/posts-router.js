@@ -82,7 +82,7 @@ router.put('/:id',(req,res) => {
     const { title, contents } = req.body
   if (!title || !contents) {
     res.status(400).json ({
-      message:'Please prove title and contents for the post'
+      message:'Please  provide title and contents for the post'
     })
   } else {
     Post.findById(req.params.id)
